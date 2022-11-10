@@ -1,6 +1,11 @@
 import { Fragment } from "react";
 import { Route, useParams } from "react-router";
-import Comments from '../components/comments/Comments'
+import Comments from '../components/comments/Comments';
+
+const DUMMY_QUOTES = [
+  {id: 'q1', author: 'Adam', text: 'Learning React is fun!'},
+  {id: 'q2', author: 'Adi', text: 'Learning React is great!'}
+]
 
 const QuoteDetail = () => {
   const params = useParams();
